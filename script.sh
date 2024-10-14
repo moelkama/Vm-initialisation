@@ -29,6 +29,33 @@ wget -O code_latest_amd64.deb https://go.microsoft.com/fwlink/?LinkID=760868
 dpkg -i code_latest_amd64.deb
 apt-get install -f
 
+        ### install vscode extensions
+        code --install-extension ms-azuretools.vscode-docker
+        code --install-extension ms-vscode.cpptools
+        code --install-extension bradlc.vscode-tailwindcss
+        code --install-extension formulahendry.code-runner
+        code --install-extension github.copilot
+        code --install-extension github.copilot-chat
+        code --install-extension ms-python.debugpy
+        code --install-extension ms-python.python
+        code --install-extension ms-python.vscode-pylance
+        code --install-extension ms-vscode.makefile-tools
+        code --install-extension ritwickdey.liveserver
+        code --install-extension formulahendry.auto-close-tag
+        code --install-extension formulahendry.auto-rename-tag
+        code --install-extension ecmel.vscode-html-css
+        code --install-extension naumovs.color-highlight
+        code --install-extension eamodio.gitlens
+        code --install-extension christian-kohler.path-intellisense
+        code --install-extension CoenraadS.bracket-pair-colorizer
+        code --install-extension Zignd.html-css-class-completion
+
+
+
+
+
+
+
 ### install Docker
 apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
